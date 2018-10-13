@@ -1,4 +1,19 @@
-header {
-  width: 10px;
-  height: 10px;
+
+.header__title {
+  //width: 10px;
+  //height: 20px;
+
+  font-family: 'Montserrat', sans-serif;
+  color:  #ffffff;
+  font-size: 47.99px;/* Approximation due to font substitution */
+  font-weight: bold;
+  line-height: 15px;/* Approximation due to font substitution */
+  text-align: center;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
