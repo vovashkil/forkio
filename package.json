@@ -1,0 +1,22 @@
+{
+  "name": "project-forkio",
+  "version": "1.0.0",
+  "description": "Project Forkio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vovashkil/project-forkio.git"
+  },
+  "keywords": [
+    "Forkio"
+  ],
+  "author": "Vova Shkil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vovashkil/project-forkio/issues"
+  },
+  "homepage": "https://github.com/vovashkil/project-forkio#readme"
+}
