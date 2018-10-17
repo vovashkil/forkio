@@ -1,0 +1,65 @@
+.section-editor {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    color: #635c73;
+    font-size: 25.99px;
+    font-weight: bold;
+    line-height: 30.813px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+  }
+  &__description {
+    font-family: 'Lato', sans-serif;
+    color: #323232;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 14.673px;
+    text-align: center;
+    box-sizing: border;
+    padding: 0 25px;
+    margin-bottom: 35px;
+  }
+  &__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    //font-size: 0;
+    font-weight: bold;
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f1f1f1;
+      padding: 4px 5px;
+      border: 1px solid #dedede;
+      //margin-bottom: 10px;
+      &-text {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin-left: 3px;
+      }
+      &-icon {
+        font-size: 30px;
+      }
+
+      &-number {
+        margin: 0;
+        font-size: 14px;
+        display: inline-block;
+        padding: 4px 10px;
+        border: 1px solid #dedede;
+        margin-right: 10px;
+      }
+
+    }
+
+  }
+
+}

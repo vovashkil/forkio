@@ -62,7 +62,7 @@ gulp.task("copyFonts", function(){
 
 
 gulp.task("serve", function (){
-    runSequence("clean", ["sass","copyFonts"], function(){
+    runSequence("clean", ["sass","copyFonts","img"], function(){
         browserSync.init({
             server: "./dist/"
         });

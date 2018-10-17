@@ -1,19 +1,121 @@
-
-.header__title {
-  //width: 10px;
-  //height: 20px;
-
-  font-family: 'Montserrat', sans-serif;
-  color:  #ffffff;
-  font-size: 47.99px;/* Approximation due to font substitution */
-  font-weight: bold;
-  line-height: 15px;/* Approximation due to font substitution */
-  text-align: center;
-
+body {
+  //width: 100vw;
 }
 
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+
+  .navbar {
+    padding: 33px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    &__logo {
+      background-image: url(../img/0320px/navbar-shape.png);
+      width: 43px;
+      height: 41px;
+      margin-left: 15px;
+    }
+    &__button {
+      padding: 12px 25px;
+      color: #ffffff;
+      background-color: #8e82ad;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+    &__menu {
+      background-image: url(../img/0320px/navbar-sandwich.png);
+      width: 26px;
+      height: 21px;
+      margin-right: 15px;
+    }
+  }
+
+  .app-info {
+    //background-color: #000001;
+    //margin: 0;
+    margin-bottom: 121px;
+    //padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+    &__title {
+      padding-top: 43px;
+      padding-bottom: 20px;
+      color: #ffffff;
+      font-size: 47.99px;
+      font-weight: bold;
+      text-align: center;
+    }
+    &__description {
+      color: #8d81ac;
+      font-size: 18.01px;
+      font-weight: normal;
+      line-height: 35px;
+      text-align: center;
+      text-transform: capitalize;
+      box-sizing: border-box;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__version {
+      color: #848e97;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 35px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &__button-download {
+      padding: 15px 0;
+      margin: 0;
+      color: #ffffff;
+      background-color: #8e82ad;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      width: 90%;
+      font-size: 18.01px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: capitalize;
+      position: absolute;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+      cursor: pointer;
+    }
+    &__button-download-text-free-trial {
+      padding: 15px 0;
+      width: 100%;
+      margin: 0;
+      color: #848e97;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      text-transform: capitalize;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 150%);
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .app-info {
+    height: 718px;
+    background-image: url("../img/0320px/header-background.png");
+  }
 }
