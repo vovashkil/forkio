@@ -1,0 +1,20 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  &__list {
+
+  }
+}
+.site-description {
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    color:  #848e97;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    text-align: left;
+    padding-top: 36px;
+  }
+}
+

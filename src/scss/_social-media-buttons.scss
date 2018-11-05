@@ -1,0 +1,62 @@
+
+
+.social-media-btn {
+  width: 300px;
+  //width: 90%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 200%;
+  font-family: 'Montserrat', sans-serif;
+  color:  #ffffff;
+  font-size: 21px;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  &-followers {
+    display: inline-block;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    color: #848e97;
+    font-size: 14px;
+    font-weight: normal;
+    //line-height: 32px;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+  &-github {
+    background: #f3f3f3;
+    color: #000;
+  }
+  &-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  &-facebook {
+    background: #3B5998;
+    color: white;
+    /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  }
+  &-icon {
+    float: left;
+    display: inline-block;
+    width: 10%;
+  }
+  &-text {
+    float: left;
+    display: inline-block;
+    width: 90%;
+  }
+}
+
+.social-media-btn:hover {
+  opacity: 0.7;
+}

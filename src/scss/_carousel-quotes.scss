@@ -1,0 +1,99 @@
+/* Slideshow container */
+.carousel-quotes {
+  &-container {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    position: relative;
+  }
+  /* Slides */
+  &__item {
+    display: none;
+    padding: 63px;
+    text-align: center;
+    &-quote {
+      padding-top: 23px;
+      font-family: 'Lato', sans-serif;
+      color: #333333;
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 24px;
+      text-align: center;
+      &_blue {
+        font-family: 'Lato', sans-serif;
+        color: #8d81ac;
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+    &-author {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      &-name {
+        font-family: 'Montserrat', sans-serif;
+        color: #474747;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 25px;
+        line-height: 32px;
+        //text-align: left;
+      }
+      &-nick {
+        font-family: 'Montserrat', sans-serif;
+        color: #8d81ac;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 32px;
+        //text-align: left;
+      }
+      &-image {
+        width: 85px;
+        height: 85px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+    &-date {
+      padding-top: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: #848e97;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}

@@ -41,14 +41,23 @@ gulp.task("img", function(){
         .pipe(gulp.dest("./dist/img"));
 });
 
+// gulp.task("minify", function(){
+//     return gulp.src("./src/js/*.js")
+//         .pipe(concat("bundle.js"))
+//         .pipe(gulp.dest("./dist/js"))
+//         .pipe(minify())
+//         .pipe(rename("bundle.min.js"))
+//         .pipe(gulp.dest("./dist/js"));
+// });
+
 gulp.task("minify", function(){
     return gulp.src("./src/js/*.js")
         .pipe(concat("bundle.js"))
-        .pipe(gulp.dest("./dist"))
         .pipe(minify())
-        .pipe(rename("bundle.min.js"))
-        .pipe(gulp.dest("./dist"));
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(gulp.dest("./dist/js"));
 });
+
 
 gulp.task("clean", function(){
     return gulp.src("./dist", {read: false})
@@ -62,13 +71,14 @@ gulp.task("copyFonts", function(){
 
 
 gulp.task("serve", function (){
-    runSequence("clean", ["sass","copyFonts","img"], function(){
+    runSequence("clean", ["sass","minify","copyFonts","img"], function(){
         browserSync.init({
             server: "./dist/"
         });
 
         gulp.src("./src/index.html").pipe(gulp.dest("./dist/"));
         gulp.watch("./src/scss/*.scss",["sass"]).on("change", browserSync.reload);
+        gulp.watch("./src/js/*.js",["minify"]).on("change", browserSync.reload);
         gulp.watch("./src/index.html").on("change", function(){
             return gulp.src("./src/index.html").pipe(gulp.dest("./dist/"));
         });
