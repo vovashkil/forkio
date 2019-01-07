@@ -20,7 +20,8 @@
     line-height: 14.673px;
     text-align: center;
     box-sizing: border-box;
-    padding: 0 25px;
+    // paddings are set in media queries
+    //padding: 0 25px;
     margin-bottom: 35px;
   }
   &__stats {
@@ -81,29 +82,47 @@
     font-weight: bold;
   }
   &__options {
-
+    display: flex;
+    flex-wrap: wrap;
   }
-  &__option-title {
-    padding-top: 29px;
-    font-family: 'Montserrat', sans-serif;
-    color: #323232;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  &__option-description {
-    padding: 20px 25px 0 25px;
-    font-family: 'Lato', sans-serif;
-    color: #848e97;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 25px;
-  }
-  &__option-picture {
-    padding-top: 38px;
-    &_section-footer {
-      margin-top: 57px;
-      margin-bottom: 6px;
+  &__option {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: center;
+    &-text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      &_title {
+        padding-top: 29px;
+        font-family: 'Montserrat', sans-serif;
+        color: #323232;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 150%;
+        //width: 15%;
+        //text-align: left;
+      }
+      &_description {
+        padding: 20px 25px 0 25px;
+        font-family: 'Lato', sans-serif;
+        color: #848e97;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 25px;
+        //width: 50%;
+        //text-align: left;
+      }
     }
+    &-picture {
+      padding-top: 38px;
+      flex-shrink: 0;
+      &_section-footer {
+        margin-top: 57px;
+        margin-bottom: 6px;
+      }
+    }
+
   }
 }
 
@@ -123,8 +142,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #4b3b4e;
-  //width: 320px;
-  //height: 1134px;
   background-image: url("../img/0320px/section-comments-background.png");
   background-repeat: no-repeat;
   background-position: 0 15px;
@@ -173,7 +190,6 @@
     width: 80%;
     background-color: #645766;
     margin-top: 44px;
-    //margin-bottom: 71px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -185,12 +201,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #4a384d;
-  //width: 320px;
-  //height: 1134px;
-  //background-image: url("../img/0320px/section-comments-background.png");
-  //background-repeat: no-repeat;
-  //background-position: 0 15px;
-  //padding-bottom: 71px;
   &-title {
     &__heading {
       font-family: 'Montserrat', sans-serif;
@@ -225,7 +235,6 @@
     padding-top: 46px;
     padding-bottom: 36px;
     background-color: #665769;
-    //width: 257px;
   }
   &__main-info {
     background-color: #5d4d60;
@@ -253,22 +262,7 @@
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-    //margin-bottom: 75px;
   }
-  //&__period:after {
-  //  display: inline-block;
-  //  content: "";
-  //  background-color:  #8d81ac;
-  //  width: 60px;
-  //  height: 5px;
-  //  //position: absolute;
-  //  //left: 0;
-  //  -webkit-transform: translateX(50%);
-  //  -moz-transform: translateX(50%);
-  //  -ms-transform: translateX(50%);
-  //  -o-transform: translateX(50%);
-  //  transform: translateX(50%);
-  //}
   &__description {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
@@ -355,22 +349,7 @@
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-    //margin-bottom: 95px;
   }
-  //&__period:after {
-  //  display: inline-block;
-  //  content: "";
-  //  background-color:  #8d81ac;
-  //  width: 60px;
-  //  height: 5px;
-  //  //position: absolute;
-  //  //left: 0;
-  //  -webkit-transform: translateX(50%);
-  //  -moz-transform: translateX(50%);
-  //  -ms-transform: translateX(50%);
-  //  -o-transform: translateX(50%);
-  //  transform: translateX(50%);
-  //}
   &__description {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
@@ -378,7 +357,6 @@
     font-weight: normal;
     text-align: center;
     line-height: 140%;
-    //position: relative;
   }
 
   &__buy-btn {

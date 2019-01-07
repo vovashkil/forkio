@@ -1,5 +1,4 @@
 
-
 .social-media-btn {
   width: 300px;
   //width: 90%;
@@ -12,7 +11,7 @@
   justify-content: center;
   line-height: 200%;
   font-family: 'Montserrat', sans-serif;
-  color:  #ffffff;
+  color: #ffffff;
   font-size: 21px;
   font-weight: normal;
   text-align: center;
@@ -55,6 +54,12 @@
     display: inline-block;
     width: 90%;
   }
+}
+
+.social-media-btn::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .social-media-btn:hover {
